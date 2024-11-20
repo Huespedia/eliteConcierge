@@ -1,0 +1,20 @@
+<header class="header">
+    <div class="logo">
+        <img src="../../../assets/Logo.png" alt="">
+    </div>
+    <nav >
+        <ul class="nav-links" *ngIf="showMenu">
+            <li><a (click)="redirect('voila')">Voila Hotels</a></li>
+            <li><a (click)="redirect('encore')">Encore Residences</a></li>
+            <li><a (click)="redirect('stay')">Stay Homes</a></li>
+            <li><a (click)="redirect('Jetsetters')">Jetsetter</a></li>
+            <li><a (click)="redirect('blog')">Our Blog</a></li>
+            <li><a (click)="redirect('contact')">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="menuHamburger">
+        <img src="../../../assets/menu.svg" class="menuImg" (click)="AbrirMenu()">
+    </div>
+
+</header>

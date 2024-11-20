@@ -1,0 +1,178 @@
+
+
+.contenedor{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    flex-direction: row;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    width: 75%;
+}
+
+.contenedor img{
+    width: 5rem;
+    cursor: pointer;
+}
+
+.contenedor hr{
+    margin-top: 0;
+    width: 70%;
+    color: rgb(198, 198, 26);
+    border: solid 1px;
+    display: flex;
+    justify-content: left;
+    margin-left: 0;
+}
+
+
+.logo{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 5rem;
+    height: 6rem;
+    margin-top: 3rem;
+}
+
+.redes{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.redes p{
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+
+.lgos{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.lgos img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.info{
+    width: 30%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.info img{
+    width: 2rem;
+    height: 2rem;
+    margin-top: 2.5rem;
+}
+
+.info p{
+    margin-bottom: 0;
+}
+
+.direcc{
+    width: 30%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-top:3.2rem;
+}
+
+.direcc p{
+    margin-top: 0;
+}
+.iconos{
+    display:none
+}
+
+.edificio{
+    margin-top: 1rem;
+}
+
+
+
+@media (max-width:600px) {
+
+    .contenedor{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .politica{
+        display:none
+    }
+    .info{
+        width: 50%;
+        margin-top: 0;
+    }
+    .redes{
+        width: 25%;
+        margin-right: 1rem;
+    }
+
+    .redes p{
+        margin-top: 0;
+    }
+    .direcc{
+        width: 25%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .direcc p{
+        margin-top: 0;
+    }
+
+    .edificio{
+        margin-top: 0;
+    }
+    .informacion{
+        width: 90%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width:370px) {
+
+    .informacion{
+        display: none;
+    }
+    .iconos{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .iconos i{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+}

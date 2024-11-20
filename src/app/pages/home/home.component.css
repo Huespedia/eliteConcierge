@@ -1,0 +1,130 @@
+.primeraSeccion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fondo{
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    justify-content: center; 
+    position: relative;
+}
+
+.fondo img{
+    position: absolute;
+    object-fit: cover;
+    object-position: 20% 50% ;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.fondo .degradado{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background: linear-gradient(180deg, rgb(54, 54, 54) 0%, transparent 90%);
+    
+}
+
+.fondo .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 4;
+    margin-top: 5%;
+}
+
+.texto .logo{
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+    z-index: 4;
+}
+.texto .logo img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+}
+
+.texto p{
+    color:aliceblue;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Heebo';
+}
+
+.texto button{
+    height: 2rem;
+    width: 40%;
+    margin-top: 1rem;
+    border-radius: 15px;
+    border-style: none;
+    background-color: #B78010;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.texto .become{
+    margin-top: 0%;
+    margin-bottom: 2rem;
+    font-size: 25px;
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: 500;
+    color: #B78010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto .elite{
+    font-size: 35px;
+    font-family: "Moserrat";
+    font-weight: 500;
+    margin-bottom: 0%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:600px) {
+    .texto p{
+        width: 80%;
+        text-align: center;
+    }
+}
+@media (max-width:400px){
+    .texto button{
+        width: 60%;
+    } 
+}
+@media (max-width:300px) {
+    .texto p{
+        width: 80%;
+        text-align: center;
+        font-size: 14px;
+    }
+    .texto .elite{
+        font-size: 30px;
+    }
+    .texto .become{
+        font-size: 20px;
+    }
+    .texto button{
+        width: 60%;
+    }
+    .texto .logo{
+        width: 7rem;
+        height: 7rem;
+        margin-top: 4rem;
+    }
+}

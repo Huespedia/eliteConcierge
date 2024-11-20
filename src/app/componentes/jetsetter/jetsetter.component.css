@@ -1,0 +1,87 @@
+.contenedor{
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen{
+    width: 50%;
+    height: 100%;
+    background-color: #FFF0E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imagen img{
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    z-index: 1;
+}
+
+.texto{
+    width: 50%;
+    height: 100%;
+    background-color: #FFF0E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.texto h2{
+    width: 80%;
+    margin-top: 15%;
+    font-family: 'Heebo';
+    font-weight: 200;
+    color: #B78010;
+}
+
+.texto hr{
+    width:80%;
+    border: solid 1px #B78010;
+    margin-right: 20%;
+}
+
+.texto p{
+    width: 90%;
+    font-size: 16px;
+    font-family: 'Heebo';
+}
+
+.texto button{
+    width: 30%;
+    background-color: #B78010;
+    color: aliceblue;
+    border-radius: 15px;
+    height: 2rem;
+    border-style: none;
+    cursor: pointer;
+}
+
+@media (max-width:600px){
+    .imagen{
+        display:none
+    }
+
+    .texto{
+        width: 100%;
+        padding-left: 10%;
+        overflow: hidden;
+    }
+
+    .texto h2{
+        font-size: 20px;
+    }
+
+    .texto p{
+        font-size: 14px;
+    }
+
+    .texto button{
+        width: 60%;
+    }
+}
