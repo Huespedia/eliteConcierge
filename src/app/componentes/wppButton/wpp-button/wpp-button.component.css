@@ -1,0 +1,24 @@
+.whatsapp-flotante {
+    position: fixed; /* Fija el botón en relación con la ventana del navegador */
+    width: 60px;
+    height: 60px;
+    bottom: 40px; /* Distancia desde la parte inferior */
+    right: 40px; /* Distancia desde la parte derecha */
+    color: #FFF; /* Color del ícono (blanco) */
+    border-radius: 50px; /* Hace el botón circular */
+    text-align: center; /* Centra el ícono dentro del botón */
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+    display: flex; /* Para centrar el ícono verticalmente */
+    align-items: center; /* Para centrar el ícono verticalmente */
+    justify-content: center; /* Para centrar el ícono horizontalmente */
+  }
+  
+  .whatsapp-flotante:hover {
+    scale: 1.5; /* Escalado en el hover*/
+  }
+  
+  /* Si no usas Font Awesome y pones un <img> directamente, puedes necesitar ajustar esto */
+  .whatsapp-flotante img {
+    width: 60px; /* Ajusta el tamaño según sea necesario */
+    height: 60px; /* Ajusta el tamaño según sea necesario */
+  }

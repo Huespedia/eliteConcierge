@@ -1,0 +1,200 @@
+.contenedor{
+    width: 100%;
+    height: 70rem;
+    background-color: #FFF0E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.titulo h2{
+    font-family:  'Heebo';
+    font-size: 30px;
+    font-weight: 200;
+    color: #B78010;
+}
+.gridGalery{
+    display: grid;
+    width: 100%;
+    height: 90%;
+    gap: 1rem;
+    grid-template-columns:repeat(12, 1fr);
+    grid-template-areas:
+    "s1 s1 s1 s1 s2 s2 s2 s2 s3 s3 s3 s3"
+    "s4 s4 s4 s5 s5 s5 s5 s6 s6 s6 s6 s6"
+    "s7 s7 s7 s7 s7 s8 s8 s8 s9 s9 s9 s9"
+    "s10 s10 s10 s10 s11 s11 s11 s11 s11 s11 s11 s11";
+}
+
+.servicio{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.servicio img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    z-index: 1;
+}
+.servicio .degradado{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background:linear-gradient(0deg, rgb(54, 54, 54) 0%, transparent 90%);;
+}
+
+.servicio .texto{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    flex-direction: column;
+    z-index: 3;
+    justify-content:flex-end;
+    align-items:flex-start;
+    margin-left: 1rem;
+}
+
+.texto h3{
+    margin: 0;
+    color: #B78010;
+    font-style: italic;
+    font-family: 'Lora';
+    font-size: 20px;
+    font-weight: 200;
+}
+.texto p{
+    margin-top: 0;
+    color: aliceblue;
+    font-family: 'lora';
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.servicio .fondo{
+    background-color: rgb(54, 54, 54);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.servicio .texto1{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    flex-direction: column;
+    z-index: 3;
+    justify-content:flex-end;
+    align-items:flex-end;
+    margin-right: 12%;
+    margin-bottom: 10%;
+}
+
+.texto1 h3{
+    margin: 0;
+    color: #B78010;
+    font-style: italic;
+    font-family: 'Lora';
+    font-size: 25px;
+    font-weight: 200;
+}
+.texto1  p{
+    margin-top: 0;
+    color: aliceblue;
+    font-family: 'lora';
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.texto1 button{
+    width: 40%;
+    height: 2rem;
+    border-radius: 15px;
+    border-style: none;
+    color: aliceblue;
+    background-color: #B78010;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:700px){
+    .gridGalery{
+        column-gap: 0.5rem;
+        grid-template-columns:repeat(10, 1fr);
+        grid-template-areas:
+        "s1 s1 s1 s1 s1 s2 s2 s2 s2 s2"
+        "s3 s3 s3 s3 s3 s3 s4 s4 s4 s4"
+        "s5 s5 s5 s5 s5 s6 s6 s6 s6 s6"
+        "s7 s7 s7 s7 s8 s8 s8 s8 s8 s8"
+        "s9 s9 s9 s9 s9 s10 s10 s10 s10 s10"
+        "s11 s11 s11 s11 s11 s11 s11 s11 s11 s11";
+    }
+    .titulo h2{
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:500px){
+    .texto1 button{
+        width: 60%;
+    }
+}
+@media only screen and (max-width:300px){
+    .gridGalery{
+        column-gap: 0.5rem;
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-areas:
+        "s1"
+        "s2"
+        "s3"
+        "s4"
+        "s5"
+        "s6"
+        "s7"
+        "s8"
+        "s9"
+        "s10"
+        "s11"
+    }
+    .texto h3{
+        font-size: 16px;
+    }
+    .texto p{
+        font-size: 10px;
+        margin-bottom:0;
+    }
+    .texto1 h3{
+        font-size: 16px;
+    }
+    .texto1 p{
+        font-size: 10px;
+        margin-bottom:0;
+    }
+    .texto1 button{
+        width: 60%;
+        height: 1rem;
+        border-radius: 15px;
+        margin-top:0;
+    }
+}

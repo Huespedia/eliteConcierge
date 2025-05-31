@@ -1,0 +1,85 @@
+.segundaSeccion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo{
+    width: 100%;
+    height: 32rem;
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(54, 54, 54);
+}
+
+.imagen{
+    display:flex;
+    width: 35%;
+    height: 22rem;
+    background-color: aqua;
+    margin: 10%;
+    position: relative;
+}
+
+.imagen img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.texto{
+    width: 65%;
+    margin: 5% 0% 5% 5%;
+}
+
+.texto .titulo{
+    font-family: 'Heebo';
+    font-size: 20px;
+    color: #B78010;
+}
+
+.texto .parrafo{
+    font-family: 'Heebo';
+    font-size: 16px;
+    color:aliceblue
+}
+
+@media (max-width:600px) {
+    .imagen{
+        display:none
+    }
+
+    .texto{
+        text-align: center;
+        width: 100%;
+        margin: 5% 2% 5% 2%;
+    }
+    .texto .titulo{
+        font-size: 18px;
+    }
+    .texto .parrafo{
+        font-size: 14px;
+    }
+    .fondo{
+        height: 26rem;
+    }
+}
+
+@media (max-width:300px) {
+    .imagen{
+        display:none
+    }
+    .texto .titulo{
+        font-size: 18px;
+    }
+    .texto .parrafo{
+        font-size: 14px;
+    }
+    .fondo{
+        height: 25rem;
+    }
+}

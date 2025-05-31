@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./food-bar.component.css']
 })
 export class FoodBarComponent {
-
+  correo = 'info@huespedia.com'
 }

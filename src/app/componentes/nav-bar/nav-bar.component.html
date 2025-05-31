@@ -10,6 +10,12 @@
             <li><a (click)="redirect('Jetsetters')">Jetsetter</a></li>
             <li><a (click)="redirect('blog')">Our Blog</a></li>
             <li><a (click)="redirect('contact')">Contact Us</a></li>
+            <li *ngIf="!esPaginaEnIngles">
+                <a (click)="toggleLanguage()">EN</a>
+            </li>
+            <li *ngIf="esPaginaEnIngles">
+                <a (click)="toggleLanguage()">ES</a>
+            </li>
         </ul>
     </nav>
 
